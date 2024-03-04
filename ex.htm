@@ -8,16 +8,19 @@
 <body>
     <p>functions</p>
     <p id="hello"> hello world</p>
-    <button type="button"  onclick="myFunction()"> click me</button>
+     
 
-   <script>
-   function myFunction() {
-    document.getElementById('hello').innerHTML = Date();
+    <script>
+        function myFunction(pi, r){
+             return pi * r * r;
+        }
 
-   }
-
+        let result = myFunction(3.142 , 7);
+        document.getElementById('hello').innerHTML = result;
+    </script>
+    
    
      
-   </script>
+   
 </body>
 </html>
